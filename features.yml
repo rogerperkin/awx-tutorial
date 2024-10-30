@@ -1,0 +1,20 @@
+---
+# Ansible Playbook to configure features on Nexus based on Group_Vars
+
+- name: Configure Nexus Switch Features
+  hosts: Nexus9000V
+  gather_facts: no
+
+  tasks:
+    - name: Enable Nexus switch features
+      cisco.nxos.nxos_feature:
+        feature: "{{ item }}"
+        state: enabled
+      loop: "{{ nexus_features }}"
+      register: feature_results
+
+    - name: Display feature configuration results
+      debug:
+        var: feature_results
+
+

@@ -1,0 +1,7 @@
+## Ansible Hosts File for Lab 
+
+[Nexus9000V]
+NEX-01 ansible_host=192.168.1.160
+NEX-02 ansible_host=192.168.1.161 
+
+

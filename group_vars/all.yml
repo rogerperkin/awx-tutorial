@@ -1,0 +1,19 @@
+---
+
+# Default Login details 
+
+ansible_user: "roger"
+ansible_ssh_pass: "cisco"
+ansible_network_os: "ios"
+ansible_connection: "network_cli"
+
+
+# Features to be configured on all devices
+
+nexus_features:
+  - interface-vlan
+  - vpc
+  - bgp 
+  - hsrp
+
+
