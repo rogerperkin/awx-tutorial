@@ -7,7 +7,7 @@
 
   tasks:
     - name: Enable Nexus switch features
-      cisco.nxos.nxos_feature:
+      cisco.nxos_feature:
         feature: "{{ item }}"
         state: enabled
       loop: "{{ nexus_features }}"
