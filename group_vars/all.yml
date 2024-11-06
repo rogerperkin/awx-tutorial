@@ -15,5 +15,6 @@ nexus_features:
   - vpc
   - bgp 
   - hsrp
+  - dhcp 
 
 
